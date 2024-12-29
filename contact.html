@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Cat Service</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us About Cats!</h1>
+        <p>Have questions about our cats or services? Let us know!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form action="/submit_contact" method="POST">
+                <!-- Name Field -->
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- Email Field -->
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Message Field -->
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us about your cat-related question or comment..." required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cat Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

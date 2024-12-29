@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Cat API Demo</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="cat.css">
+</head>
+<body>
+
+
+    <!-- Flower Button at the top of the page -->
+ 
+
+
+  <div class="login-container">
+   <div class="flower-btn-container">
+      <button id="flowerBtn" class="flower-btn">
+        <img src="cat-drawing.jpg" alt="Flower Icon" class="flower-icon">
+      </button>
+    </div>
+    <!-- <img src="/cat-drawing.jpg" alt="alternatetext"> -->
+    <h1>See Random Cats</h1>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" placeholder="please enter your username" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="please enter your password" id="password" name="password" required>
+      </div>
+      <button type="submit" id="submitBtn"> Login</button>
+      <div id="error-message"></div>
+    </form>
+    <button class="music-btn" id="playMusicBtn">Auto Play Meow</button>
+
+  </div>
+
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="sound-effect-cat-meow.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="login.js"></script>
+  <script src="cat.js"></script>
+
+  
+</body>
+</html>

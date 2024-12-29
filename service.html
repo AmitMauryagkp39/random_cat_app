@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Cat Service</title>
+</head>
+<body>
+
+    <h1>Write About Your Favorite Cat!</h1>
+    
+    <form action="/submit_cat" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="cat">Write about your favorite cat:</label><br>
+        <textarea id="cat" name="cat" rows="4" cols="50" placeholder="Tell us something cool about a cat..." required></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
